@@ -4,6 +4,7 @@ import PopularDestinations from "@/Component/PopularDestinations";
 import HomePageBanner from "@/Component/HomePageBanner";
 import HomePageAboutUs from "@/Component/HomePageAboutUs/HomePageAboutUs";
 import HomePageChooseUs from "@/Component/HomePageChooseUs";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <PopularDestinations />
         <HomeTourPackage />
         <HomePageChooseUs />
+        <Footer />
     </main>
   )
 }
