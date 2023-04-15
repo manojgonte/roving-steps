@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import "react-alice-carousel/lib/alice-carousel.css";
+/* @import "react-alice-carousel/lib/scss/alice-carousel.scss"; */ */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +20,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+/* /////////////////////////////// */
+.new-clip-polygon {
+  -webkit-clip-path: polygon(72% 0, 100% 52%, 71% 100%, 27% 100%, 0 51%, 30% 0);
+  clip-path: polygon(72% 0, 100% 52%, 71% 100%, 27% 100%, 0 51%, 30% 0);
+}
+
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /* transform: skewY(20deg); */
+  transform: rotate(30deg);
+}
+
+.clip-hexagon-1 {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.clip-hexagon_2_1 {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.clip-hexagon-1 {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
