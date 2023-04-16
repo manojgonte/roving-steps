@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const Header = () => {
     return (
-        <div className="top-0 left-0 w-full h-20 flex flex-row items-center bg-[#2DAAE1] bg-opacity-80 px-16 font-roboto fixed z-20">
+        <div className="top-0 left-0 w-full h-20 flex flex-row items-center bg-[#2DAAE1] px-16 font-roboto fixed z-20">
             <div className="w-96 h-full flex justify-center items-center">
                 <Image
                     src={"/Assets/images/Icons/TopLogo.svg"}
