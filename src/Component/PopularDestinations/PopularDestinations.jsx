@@ -1,6 +1,17 @@
 import Card from "@/Component/CardComponents/Card";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Keyboard, Pagination, Navigation } from "swiper";
+import { useRef } from "react";
 
 const PopularDestinations = () => {
+    const swiperRef = useRef();
+
     const cards = [
         {
             img: "/Assets/images/common/Hexagone_3.jpg",
@@ -48,20 +59,37 @@ const PopularDestinations = () => {
                 Popular Destinations
             </div>
             <div className="w-full px-16 flex flex-row h-full gap-10 justify-center">
-                {/* <Card />
-                <Card />
-                <Card /> */}
-                {
-                    cards.map(
-                        card => {
+                <button onClick={() => {
+                    console.log(swiperRef.current.eventsListeners)
+                    swiperRef.current?.slidePrev()
+                }}>
+                    <img src="/Assets/images/Icons/BackEnd.svg" />
+                </button>
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={10}
+                    modules={[Keyboard, Pagination, Navigation]}
+                    className="mySwiper"
+                    onBeforeInit={(swiper) => {
+                        swiperRef.current = swiper;
+                    }}
+                >
+                    {cards.map(
+                        (card, index) => {
                             return (
-                                <Card
-                                    cardDetails={card}
-                                />
+                                <SwiperSlide>
+                                    <Card
+                                        key={index}
+                                        cardDetails={card}
+                                    />
+                                </SwiperSlide>
                             )
                         }
-                    )
-                }
+                    )}
+                </Swiper>
+                <button onClick={() => swiperRef.current?.slideNext()}>
+                <img src="/Assets/images/Icons/NextEnd.svg" />
+                </button>
             </div>
             <div className=" flex justify-center items-center">
                 <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-36 h-8 rounded-md font-roboto text-sm drop-shadow-lg text-center">

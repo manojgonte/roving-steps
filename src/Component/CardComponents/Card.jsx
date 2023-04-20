@@ -13,7 +13,7 @@ const Card = (props) => {
     } = props.cardDetails;
 
     return (
-        <div className="flex flex-col w-72 h-full gap-4">
+        <div className="flex flex-col w-60 h-full gap-4">
             <div className="w-full h-72 p-2 bg-white relative rounded-md overflow-hidden">
                 <Image src={img}
                     width={300}

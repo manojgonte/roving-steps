@@ -1,6 +1,33 @@
 import Image from "next/image";
+import AliceCarousel from "react-alice-carousel";
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const HomePageBanner = () => {
+
+    const items = [
+        <img
+            src="/Assets/images/common/Banner_a.jpeg"
+            className="w-full h-auto"
+            // width={"100%"}
+            // height={"100%"}
+            alt="carousel-img-1"
+        />,
+        <img
+            src="/Assets/images/common/Banner_b.jpg"
+            className="w-full h-auto"
+            // width={"100%"}
+            // height={"100%"}
+            alt="carousel-img-2"
+        />,
+        <img
+            src="/Assets/images/common/Banner_c.jpeg"
+            className="w-full h-auto"
+            // width={"100%"}
+            // height={"100%"}
+            alt="carousel-img-4"
+        />
+    ];
+
     return (
         <div className="flex flex-col relative w-full h-[700px] justify-center items-center gap-8 bg-scroll banner-image px-16">
             <Image
@@ -14,6 +41,21 @@ const HomePageBanner = () => {
                 }}
                 alt="bg-image"
             />
+            {/* <div className="">
+                <AliceCarousel
+                    autoPlay
+                    autoPlayControls
+                    autoPlayStrategy="none"
+                    autoPlayInterval={1000}
+                    animationDuration={1000}
+                    animationType="fadeout"
+                    infinite
+                    touchTracking={false}
+                    disableDotsControls
+                    disableButtonsControls
+                    items={items}
+                />
+            </div> */}
             <div className="z-10 flex flex-col relative w-full h-[500px] justify-center items-center gap-8">
                 <div className="w-[600px] text-center font-bold text-white text-4xl font-roboto drop-shadow-lg">
                     Explore the huge word and enjoy it's beauty
