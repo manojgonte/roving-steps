@@ -34,8 +34,8 @@ export default function Register() {
                                             <div className="justify-center md:mb-10">
                                                 <Image
                                                     src={"/Assets/images/Icons/TopLogo.svg"}
-                                                    width={0}
-                                                    height={0}
+                                                    width={100}
+                                                    height={100}
                                                     className="w-full h-4/5"
                                                     alt="logo"
                                                 />
