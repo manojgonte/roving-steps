@@ -59,10 +59,10 @@ const HomePageAboutUs = () => {
                 <div className="text-[#1B2C60] font-extrabold text-3xl font-roboto">About Us</div>
                 <div className="text-[#1B2C60] font-normal text-sm text-center w-4/5">
                     <p className="mb-10">
-                        Roving steps is formed with a strong passion of exploring different destinations. This is not just a company but a family which we are looking forward to create. We are here to Use our expert knowledge and a personalized touch to make sure reality exceeds your expectations. We get immense pleasure to see our guest satisfied and smiling because of our services.
+                        {`Roving steps is formed with a strong passion of exploring different destinations. This is not just a company but a family which we are looking forward to create. We are here to Use our expert knowledge and a personalized touch to make sure reality exceeds your expectations. We get immense pleasure to see our guest satisfied and smiling because of our services.`}
                     </p>
                     <p>
-                        We all experience moments which leave us stunned and which gives us Goosebumps and so much more that we cannot express when we travel to places we always wished for… Roving Steps takes the responsibility for fulfilling your desired dreams of Traveling!!
+                        {`We all experience moments which leave us stunned and which gives us Goosebumps and so much more that we cannot express when we travel to places we always wished for… Roving Steps takes the responsibility for fulfilling your desired dreams of Traveling!!`}
                     </p>
                 </div>
                 <div>

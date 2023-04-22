@@ -105,10 +105,9 @@ const HomeTourPackage = () => {
              */}
             <div className="w-full px-16 flex flex-row h-full gap-10 justify-center">
                 <button onClick={() => {
-                    console.log(swiperRef.current.eventsListeners)
                     swiperRef.current?.slidePrev()
                 }}>
-                    <img src="/Assets/images/Icons/BackEnd.svg" />
+                    <img src="/Assets/images/Icons/BackEnd.svg" alt=""/>
                 </button>
                 <Swiper
                     slidesPerView={4}
@@ -122,9 +121,8 @@ const HomeTourPackage = () => {
                     {cards.map(
                         (card, index) => {
                             return (
-                                <SwiperSlide>
-                                    <Card
-                                        key={index}
+                                <SwiperSlide key={index}>
+                                    <Card                                        
                                         cardDetails={card}
                                     />
                                 </SwiperSlide>
@@ -133,7 +131,7 @@ const HomeTourPackage = () => {
                     )}
                 </Swiper>
                 <button onClick={() => swiperRef.current?.slideNext()}>
-                    <img src="/Assets/images/Icons/NextEnd.svg" />
+                    <img src="/Assets/images/Icons/NextEnd.svg" alt="" />
                 </button>
             </div>
         </div>

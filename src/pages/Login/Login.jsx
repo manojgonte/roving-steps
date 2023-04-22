@@ -23,7 +23,7 @@ export default function Login() {
                                         <div className="px-4 py-6 md:mx-6 md:p-12">
                                             <div className="justify-center"><img src={"/Assets/images/Logo/Roving Steps Logo white.png"} style={{ width: 300 }} /></div>
                                             <p className="text-sm text-center">
-                                                Explore the huge world and enjoy it's beauty
+                                                {`Explore the huge world and enjoy it's beauty`}
                                             </p>
                                         </div>
                                     </div>
@@ -66,7 +66,7 @@ export default function Login() {
 
 
                                                 <div className="flex items-center justify-start pb-6 text-sm">
-                                                    <p className="mb-0 mr-2 text-black">Don't have an account yet?</p>
+                                                    <p className="mb-0 mr-2 text-black">{`Don't have an account yet?`}</p>
                                                     <a href="" className="text-[#ECBF40]">
                                                         <Link href="/Register">Sign Up</Link>
                                                     </a>

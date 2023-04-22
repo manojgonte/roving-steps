@@ -1,32 +1,31 @@
 import Image from "next/image";
-import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 const HomePageBanner = () => {
 
-    const items = [
-        <img
-            src="/Assets/images/common/Banner_a.jpeg"
-            className="w-full h-auto"
-            // width={"100%"}
-            // height={"100%"}
-            alt="carousel-img-1"
-        />,
-        <img
-            src="/Assets/images/common/Banner_b.jpg"
-            className="w-full h-auto"
-            // width={"100%"}
-            // height={"100%"}
-            alt="carousel-img-2"
-        />,
-        <img
-            src="/Assets/images/common/Banner_c.jpeg"
-            className="w-full h-auto"
-            // width={"100%"}
-            // height={"100%"}
-            alt="carousel-img-4"
-        />
-    ];
+    // const items = [
+    //     <img
+    //         src="/Assets/images/common/Banner_a.jpeg"
+    //         className="w-full h-auto"
+    //         // width={"100%"}
+    //         // height={"100%"}
+    //         alt="carousel-img-1"
+    //     />,
+    //     <img
+    //         src="/Assets/images/common/Banner_b.jpg"
+    //         className="w-full h-auto"
+    //         // width={"100%"}
+    //         // height={"100%"}
+    //         alt="carousel-img-2"
+    //     />,
+    //     <img
+    //         src="/Assets/images/common/Banner_c.jpeg"
+    //         className="w-full h-auto"
+    //         // width={"100%"}
+    //         // height={"100%"}
+    //         alt="carousel-img-4"
+    //     />
+    // ];
 
     return (
         <div className="flex flex-col relative w-full h-[700px] justify-center items-center gap-8 bg-scroll banner-image px-16">
@@ -58,10 +57,10 @@ const HomePageBanner = () => {
             </div> */}
             <div className="z-10 flex flex-col relative w-full h-[500px] justify-center items-center gap-8">
                 <div className="w-[600px] text-center font-bold text-white text-4xl font-roboto drop-shadow-lg">
-                    Explore the huge word and enjoy it's beauty
+                    {`Explore the huge word and enjoy it's beauty`}
                 </div>
                 <div className="w-4/5 text-white text-xl font-thin text-center tracking-widest ">
-                    Let's experience moments which leave us stunned and gives us goosebumps and so much more that we cannot express when we travel to places we always wished for
+                    {`Let's experience moments which leave us stunned and gives us goosebumps and so much more that we cannot express when we travel to places we always wished for`}
                 </div>
                 <div className="w-full flex justify-center">
                     <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-28 h-8 rounded-md font-roboto text-sm drop-shadow-lg text-center">
@@ -75,6 +74,7 @@ const HomePageBanner = () => {
                                 src={"/Assets/images/icons/LocationDefault.svg"}
                                 width={10}
                                 height={10}
+                                alt=""
                             />
                             <input placeholder="Location" className="p-1 rounded-l-3xl w-full font-roboto text-sm" />
                         </div>
@@ -83,6 +83,7 @@ const HomePageBanner = () => {
                                 src={"/Assets/images/icons/DateDefault.svg"}
                                 width={15}
                                 height={15}
+                                alt=""
                             />
                             <input placeholder="Check in" className="p-1 w-full font-roboto text-sm" />
                         </div>
@@ -91,6 +92,7 @@ const HomePageBanner = () => {
                                 src={"/Assets/images/icons/DateDefault.svg"}
                                 width={15}
                                 height={15}
+                                alt=""
                             />
                             <input placeholder="Check out" className="p-1 w-full font-roboto text-sm" />
                         </div>
@@ -99,6 +101,7 @@ const HomePageBanner = () => {
                                 src={"/Assets/images/icons/DateDefault.svg"}
                                 width={15}
                                 height={15}
+                                alt=""
                             />
                             <input placeholder="Adult" className="w-full p-1 font-roboto text-sm" />
                         </div>
@@ -107,6 +110,7 @@ const HomePageBanner = () => {
                                 src={"/Assets/images/icons/DateDefault.svg"}
                                 width={15}
                                 height={15}
+                                alt=""
                             />
                             <input placeholder="Kids" className="w-full p-1 font-roboto text-sm" />
                         </div>

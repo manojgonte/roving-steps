@@ -19,8 +19,8 @@ const HomePageTestimonial = () => {
             <div className="w-full h-20 flex justify-center items-center">
                 <Image src={"/Assets/images/Icons/Sayings.png"}
                     width={100} height={100}
-                    // fill
-                    className="w-24 h-20 object-center" alt="Sayings" />
+                    className="w-24 h-20 object-center"
+                    alt="Sayings" />
             </div>
             <div className="w-full h-10 flex justify-center items-center pb-4">
                 <span className="text-[#1B2C60] text-2xl font-bold font-roboto">What traveler are saying about us?</span>
@@ -40,10 +40,8 @@ const HomePageTestimonial = () => {
                     {[1, 2, 3, 4, 5, 6].map(
                         (card, index) => {
                             return (
-                                <SwiperSlide>
-                                    <TestimonialCard
-                                        key={index}
-                                    />
+                                <SwiperSlide key={index}>
+                                    <TestimonialCard />
                                 </SwiperSlide>
                             )
                         }

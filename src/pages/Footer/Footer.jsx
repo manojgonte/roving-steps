@@ -8,15 +8,10 @@ const Footer = () => {
                     width={200}
                     height={200}
                     className="object-cover"
+                    alt=""
                 />
             </div>
             <div className="flex flex-row w-full h-full bg-[#1B2C60] bg-opacity-80">
-                {/* <Image
-                    width={100}
-                    height={100}
-                    src={"/Assets/images/common/Banner_a.jpeg"}
-                    className="w-full h-full object-fill"
-                /> */}
                 <div className="w-2/5 h-full pl-28 py-10 flex flex-col gap-4">
                     <div className="flex flex-col">
                         <span className="text-[#ECA740] text-lg font-roboto mb-3">Information</span>

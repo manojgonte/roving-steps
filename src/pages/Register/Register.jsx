@@ -23,7 +23,7 @@ export default function Register() {
                                         <div className="px-4 py-6 md:mx-6 md:p-12">
                                             <div className="justify-center"><img src={"/Assets/images/Logo/Roving Steps Logo white.png"} style={{ width: 300 }} /></div>
                                             <p className="text-sm text-center">
-                                                Explore the huge world and enjoy it's beauty
+                                                {`Explore the huge world and enjoy it's beauty`}
                                             </p>
                                         </div>
                                     </div>

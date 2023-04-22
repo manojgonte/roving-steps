@@ -60,7 +60,6 @@ const PopularDestinations = () => {
             </div>
             <div className="w-full px-16 flex flex-row h-full gap-10 justify-center">
                 <button onClick={() => {
-                    console.log(swiperRef.current.eventsListeners)
                     swiperRef.current?.slidePrev()
                 }}>
                     <img src="/Assets/images/Icons/BackEnd.svg" />
@@ -77,9 +76,8 @@ const PopularDestinations = () => {
                     {cards.map(
                         (card, index) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
                                     <Card
-                                        key={index}
                                         cardDetails={card}
                                     />
                                 </SwiperSlide>
@@ -88,7 +86,7 @@ const PopularDestinations = () => {
                     )}
                 </Swiper>
                 <button onClick={() => swiperRef.current?.slideNext()}>
-                <img src="/Assets/images/Icons/NextEnd.svg" />
+                    <img src="/Assets/images/Icons/NextEnd.svg" alt="" />
                 </button>
             </div>
             <div className=" flex justify-center items-center">

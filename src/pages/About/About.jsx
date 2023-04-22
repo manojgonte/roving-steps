@@ -33,13 +33,13 @@ export default function About() {
                                         <div className="text-black text-start">
                                             <h2 className="text-4xl font-bold mb-5 text-[#ECBF40]">Roving Steps...</h2>
                                             <p>
-                                                We formed with a strong passion of exploring different destinations. 
+                                                {` We formed with a strong passion of exploring different destinations. 
                                                 This is not just a company but a family which we are looking forward to create. 
                                                 We are here to Use our expert knowledge and a personalized touch to make sure reality exceeds your expectations. 
-                                                We get immense pleasure to see our guest satisfied and smiling because of our services. 
+                                                We get immense pleasure to see our guest satisfied and smiling because of our services. `}
                                             </p>
                                             <p className="md:mt-3">
-                                                We all experience moments which leave us stunned and which gives us Goosebumps and so much more that we cannot express when we travel to places we always wished or… Roving Steps takes the responsibility for fulfilling your desired dreams of Traveling!!
+                                                {`We all experience moments which leave us stunned and which gives us Goosebumps and so much more that we cannot express when we travel to places we always wished or… Roving Steps takes the responsibility for fulfilling your desired dreams of Traveling!!`}
                                             </p>
                                         </div>
                                     </div>

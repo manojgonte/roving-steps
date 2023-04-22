@@ -19,6 +19,7 @@ const Card = (props) => {
                     width={300}
                     height={160}
                     className="w-full h-full object-fill"
+                    alt=""
                 />
             </div>
             <div className="px-1">
@@ -31,7 +32,7 @@ const Card = (props) => {
                     </div>}
                 </div>
                 {seeMore && <div className="flex flex-col h-8 text-xs overflow-ellipsis overflow-hidden line-clamp-3 font-roboto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla voluptate nam placeat minus ducimus. Tenetur quasi, harum illum sapiente dolorem voluptas, praesentium commodi quisquam aliquam quas, voluptatum animi ullam!
+                    {`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla voluptate nam placeat minus ducimus. Tenetur quasi, harum illum sapiente dolorem voluptas, praesentium commodi quisquam aliquam quas, voluptatum animi ullam!`}
                 </div>}
                 {!seeMore &&
                     <div className=" flex flex-col gap-3">
