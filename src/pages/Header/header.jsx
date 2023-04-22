@@ -14,7 +14,9 @@ export const Header = () => {
                 />
             </div>
             <div className="gap-8 flex items-center justify-center text-white flex-row right-10 pl-20 h-full">
-                <div className="border-[#ECA740] h-full w-fit flex justify-center items-center font-roboto font-normal opacity-100 text-xs hover:border-b-2">ABOUT US</div>
+                <div className="border-[#ECA740] h-full w-fit flex justify-center items-center font-roboto font-normal opacity-100 text-xs hover:border-b-2">
+                    <Link href="/About">ABOUT US</Link>
+                </div>
                 <div className="border-[#ECA740] h-full w-fit flex justify-center items-center font-roboto font-normal opacity-100 text-xs hover:border-b-2">TOURS</div>
                 <div className="border-[#ECA740] h-full w-fit flex justify-center items-center font-roboto font-normal opacity-100 text-xs hover:border-b-2">GALLERY</div>
                 <div className="border-[#ECA740] h-full w-fit flex justify-center items-center font-roboto font-normal opacity-100 text-xs hover:border-b-2">FLIGHT BOOKING</div>

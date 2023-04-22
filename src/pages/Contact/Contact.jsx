@@ -7,11 +7,11 @@ export default function Contact() {
             <Header />
 
             {/* hero section */}
-            <div class="text-center bg-gray-50 text-gray-800 py-24 px-6 md:mt-8" style={{
+            <div className="text-center bg-gray-50 text-gray-800 py-24 px-6 md:mt-8" style={{
                 backgroundImage: "url('/Assets/images/common/Banner_b.jpg')",
                 backgroundSize: 'cover'
             }}>
-                <h2 class="text-5xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12 text-white">Contact Us</h2>
+                <h2 className="text-5xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12 text-white">Contact Us</h2>
             </div>
 
             {/* contact form and contact details */}
