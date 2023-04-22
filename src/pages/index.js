@@ -15,7 +15,7 @@ export default function Home() {
         <HomePageAboutUs />
         <PopularDestinations />
         <HomeTourPackage />
-        <HomePageChooseUs />
+        {/* <HomePageChooseUs /> */}
         <HomePageTestimonial />
         <Footer />
     </main>
