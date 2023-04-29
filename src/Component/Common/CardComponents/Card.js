@@ -9,12 +9,13 @@ const Card = (props) => {
         cost,
         note,
         seeMore,
-        button
+        button,
+        path
     } = props.cardDetails;
 
     return (
         <div className="flex flex-col w-60 h-full gap-4">
-            <div className="w-full h-72 p-2 bg-white relative rounded-md overflow-hidden">
+            <div className={`w-full ${path === "tours" ? 'h-52' : 'h-72'} p-2 bg-white relative rounded-md overflow-hidden`}>
                 <Image src={img}
                     width={300}
                     height={160}
