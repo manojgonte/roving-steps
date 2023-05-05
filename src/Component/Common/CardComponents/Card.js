@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Card = (props) => {
     const {
@@ -50,7 +51,7 @@ const Card = (props) => {
                         <div>{note}</div>
                     </div>
                 }
-                {seeMore && <div className="font-roboto text-[#27A5BF] text-xs">See more...</div>}
+                {seeMore && <div className="font-roboto text-[#27A5BF] text-xs"><Link href="/TourDetail">See more...</Link></div>}
                 {button.enable && <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-24 h-7 rounded-md font-roboto text-xs drop-shadow-lg text-center my-2">
                     BOOK NOW
                 </button>}
