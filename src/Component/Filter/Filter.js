@@ -22,7 +22,7 @@ export default function Filters({ title, TourList }) {
                 {
                     showFilterList && TourList.map((name, index) => {
                         return (
-                            <CheckboxComponent name={name} index={index} />
+                            <CheckboxComponent key={index} name={name} index={index} />
                         )
                     })
                 }
