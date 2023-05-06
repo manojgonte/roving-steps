@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Footer from "../Footer";
 import Header from "../Header";
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import TourDay from "@/Component/TourDay";
 
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function TourDetail() {
 
@@ -18,7 +18,7 @@ export default function TourDetail() {
         {
             img: "/Assets/images/common/Banner_a.jpg",
             title: "Day 1: Arriving in Dubai",
-            desc: "Welcome to Dubai!!! A land full of surprises and a complete destination. Dubai offers an extensive horizon of things to do, see, experience and learn. It is surrounded by mysterious deserts, sand dunes and within the city you'll find amazing beach resorts, incredibly high tech buildings with old traditional houses and mosques. Upon arrival at the airport, you will be transferred to your hotel. And later in the evening will be proceed to Dhow cruise. Overnight at the hotel in Dubai",
+            desc: "Welcome to Dubai!!! A land full of surprises and a complete destination. Dubai offers an extensive horizon of things to do, see, experience and learn. It is surrounded by mysterious deserts, sand dunes and within the city you will find amazing beach resorts, incredibly high tech buildings with old traditional houses and mosques. Upon arrival at the airport, you will be transferred to your hotel. And later in the evening will be proceed to Dhow cruise. Overnight at the hotel in Dubai",
             activity: "Hotel Name",
             stay: "Hotel Name",
             food: "Breakfast | Lunch | Dinner",
@@ -34,7 +34,7 @@ export default function TourDetail() {
         {
             img: "/Assets/images/common/Banner_a.jpg",
             title: "Day 3: Abu Dhabi - City tour with Ferrari World",
-            desc: "Today after breakfast proceed to Abu dhabi. Visit Sheikh Zayed Grand Mosque - This architectural work of art is one of the world's largest mosques, with a capacity for an astonishing 41,000 worshipers. Later visit the world’s most famous Ferrari Park. Overnight at the hotel in Dubai.",
+            desc: "Today after breakfast proceed to Abu dhabi. Visit Sheikh Zayed Grand Mosque - This architectural work of art is one of the world largest mosques, with a capacity for an astonishing 41,000 worshipers. Later visit the world most famous Ferrari Park. Overnight at the hotel in Dubai.",
             activity: "Hotel Name",
             stay: "Hotel Name",
             food: "Breakfast | Lunch | Dinner",
@@ -198,7 +198,7 @@ export default function TourDetail() {
                                 Dubai...Where everything Glitters... Dazzling Dubai is where the ancient Arabic culture & tradition sit side by side with the modern infrastructure. 
                                 Our Dubai Tours are memorable for all times to come, for we make you taste the Arabic delicacies, travel the paths of Gold Souk, 
                                 thrill at Desert Safari, experience the stunning feat of architecture- the Burj Khalifa, the iconic Burj al-Arab, Palm Jumeirah & more. 
-                                With Kesari, you'll not only see Dubai you'll experience it! The Dhow Dinner Cruise, the Desert Dune Safari, the Dubai Fountain Show and Snow World are some of the highlights of our Dubai Tour packages. 
+                                With Kesari, you will not only see Dubai you will experience it! The Dhow Dinner Cruise, the Desert Dune Safari, the Dubai Fountain Show and Snow World are some of the highlights of our Dubai Tour packages. 
                                 The Dubai Shopping Festival and Ferrari Park are entertaining elements that are added to enhance your Dubai Tours.
                             </p>
                         </div>
