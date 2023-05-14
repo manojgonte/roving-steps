@@ -1,73 +1,100 @@
 import Image from "next/image";
 import 'react-alice-carousel/lib/alice-carousel.css';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import SearchFilter from "../Common/SearchFilter/SearchFilter";
 
 const HomePageBanner = () => {
 
-    // const items = [
-    //     <img
-    //         src="/Assets/images/common/Banner_a.jpeg"
-    //         className="w-full h-auto"
-    //         // width={"100%"}
-    //         // height={"100%"}
-    //         alt="carousel-img-1"
-    //     />,
-    //     <img
-    //         src="/Assets/images/common/Banner_b.jpg"
-    //         className="w-full h-auto"
-    //         // width={"100%"}
-    //         // height={"100%"}
-    //         alt="carousel-img-2"
-    //     />,
-    //     <img
-    //         src="/Assets/images/common/Banner_c.jpeg"
-    //         className="w-full h-auto"
-    //         // width={"100%"}
-    //         // height={"100%"}
-    //         alt="carousel-img-4"
-    //     />
-    // ];
-
     return (
-        <div className="flex flex-col relative w-full h-[700px] justify-center items-center gap-8 bg-scroll banner-image px-16">
-            <Image
-                src={"/Assets/images/common/Banner_a.jpeg"}
-                fill
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    objectPosition: "center",
+        <div className="flex flex-col relative w-full h-[700px] border border-black justify-center items-center">
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
                 }}
-                alt="bg-image"
-            />
-            {/* <div className="">
-                <AliceCarousel
-                    autoPlay
-                    autoPlayControls
-                    autoPlayStrategy="none"
-                    autoPlayInterval={1000}
-                    animationDuration={1000}
-                    animationType="fadeout"
-                    infinite
-                    touchTracking={false}
-                    disableDotsControls
-                    disableButtonsControls
-                    items={items}
-                />
-            </div> */}
-            <div className="z-10 flex flex-col relative w-full h-[500px] justify-center items-center gap-8">
-                <div className="w-[600px] text-center font-bold text-white text-4xl font-roboto drop-shadow-lg">
+                pagination={{
+                    clickable: false,
+                }}
+                // navigation={false}
+                modules={[Autoplay]}
+                className="w-full h-full"
+            >
+                <SwiperSlide>
+                    <Image
+                        src={"/Assets/images/Banner/BannerFour.jpeg"}
+                        fill
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                        }}
+                        alt="bg-image"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
+                        src={"/Assets/images/Banner/BannerOne.jpeg"}
+                        fill
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                        }}
+                        alt="bg-image"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
+                        src={"/Assets/images/Banner/BannerTwo.jpeg"}
+                        fill
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                        }}
+                        alt="bg-image"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
+                        src={"/Assets/images/Banner/BannerThree.jpeg"}
+                        fill
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                        }}
+                        alt="bg-image"
+                    />
+                </SwiperSlide>
+            </Swiper>
+            <div className="z-10 flex flex-col absolute w-full h-[500px] justify-center items-center gap-8">
+                <div className="w-[600px] text-center font-bold text-white text-4xl drop-shadow-lg">
                     {`Explore the huge word and enjoy it's beauty`}
                 </div>
                 <div className="w-4/5 text-white text-xl font-thin text-center tracking-widest ">
                     {`Let's experience moments which leave us stunned and gives us goosebumps and so much more that we cannot express when we travel to places we always wished for`}
                 </div>
                 <div className="w-full flex justify-center">
-                    <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-28 h-8 rounded-md font-roboto text-sm drop-shadow-lg text-center">
+                    <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-28 h-8 rounded-md text-sm drop-shadow-lg text-center">
                         EXPLORE
                     </button>
                 </div>
-                <div className="w-11/12 h-9">
+                {/* <div className="w-11/12 h-9">
                     <div className="bg-white w-full h-full rounded-3xl flex items-center">
                         <div className="w-1/5 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                             <Image
@@ -76,7 +103,7 @@ const HomePageBanner = () => {
                                 height={10}
                                 alt=""
                             />
-                            <input placeholder="Location" className="p-1 rounded-l-3xl w-full font-roboto text-sm" />
+                            <input placeholder="Location" className="p-1 rounded-l-3xl w-full  text-sm" />
                         </div>
                         <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                             <Image
@@ -85,7 +112,7 @@ const HomePageBanner = () => {
                                 height={15}
                                 alt=""
                             />
-                            <input placeholder="Check in" className="p-1 w-full font-roboto text-sm" />
+                            <input placeholder="Check in" className="p-1 w-full  text-sm" />
                         </div>
                         <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                             <Image
@@ -94,7 +121,7 @@ const HomePageBanner = () => {
                                 height={15}
                                 alt=""
                             />
-                            <input placeholder="Check out" className="p-1 w-full font-roboto text-sm" />
+                            <input placeholder="Check out" className="p-1 w-full  text-sm" />
                         </div>
                         <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                             <Image
@@ -103,7 +130,7 @@ const HomePageBanner = () => {
                                 height={15}
                                 alt=""
                             />
-                            <input placeholder="Adult" className="w-full p-1 font-roboto text-sm" />
+                            <input placeholder="Adult" className="w-full p-1  text-sm" />
                         </div>
                         <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                             <Image
@@ -112,15 +139,16 @@ const HomePageBanner = () => {
                                 height={15}
                                 alt=""
                             />
-                            <input placeholder="Kids" className="w-full p-1 font-roboto text-sm" />
+                            <input placeholder="Kids" className="w-full p-1  text-sm" />
                         </div>
                         <div className="w-1/6 h-full flex items-center pl-6 rounded-r-3xl hover:bg-[#ECBF40]">
-                            <button className="text-[#C6C6C6] hover:text-white font-roboto text-sm">
+                            <button className="text-[#C6C6C6] hover:text-white  text-sm">
                                 Search
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <SearchFilter />
             </div>
 
         </div>

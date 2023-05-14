@@ -53,7 +53,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="mb-12 pb-1 pt-1 text-center">
-                                    <button className="bg-[#ECBF40] h-10 p-3 flex items-center justify-center rounded-md font-roboto font-normal opacity-100 text-sm hover:shadow-lg">
+                                    <button className="bg-[#ECBF40] h-10 p-3 flex items-center justify-center rounded-md  font-normal opacity-100 text-sm hover:shadow-lg">
                                         SEND MESSAGE
                                     </button>
                                 </div>

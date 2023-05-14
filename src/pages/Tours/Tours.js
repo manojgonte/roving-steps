@@ -136,7 +136,7 @@ export default function Tours() {
                 />
                 <div className="z-10 flex flex-col relative w-full h-full justify-center items-center gap-8">
                     <div className="w-full text-center">
-                        <span className="text-4xl font-roboto text-white font-bold">
+                        <span className="text-4xl  text-white font-bold">
                             Tours
                         </span>
                     </div>
@@ -149,7 +149,7 @@ export default function Tours() {
                                     height={10}
                                     alt=""
                                 />
-                                <input placeholder="Location" className="p-1 rounded-l-3xl w-full font-roboto text-sm" />
+                                <input placeholder="Location" className="p-1 rounded-l-3xl w-full  text-sm" />
                             </div>
                             <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                                 <Image
@@ -158,7 +158,7 @@ export default function Tours() {
                                     height={15}
                                     alt=""
                                 />
-                                <input placeholder="Check in" className="p-1 w-full font-roboto text-sm" />
+                                <input placeholder="Check in" className="p-1 w-full  text-sm" />
                             </div>
                             <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                                 <Image
@@ -167,7 +167,7 @@ export default function Tours() {
                                     height={15}
                                     alt=""
                                 />
-                                <input placeholder="Check out" className="p-1 w-full font-roboto text-sm" />
+                                <input placeholder="Check out" className="p-1 w-full  text-sm" />
                             </div>
                             <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                                 <Image
@@ -176,7 +176,7 @@ export default function Tours() {
                                     height={15}
                                     alt=""
                                 />
-                                <input placeholder="Adult" className="w-full p-1 font-roboto text-sm" />
+                                <input placeholder="Adult" className="w-full p-1  text-sm" />
                             </div>
                             <div className="w-1/6 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                                 <Image
@@ -185,10 +185,10 @@ export default function Tours() {
                                     height={15}
                                     alt=""
                                 />
-                                <input placeholder="Kids" className="w-full p-1 font-roboto text-sm" />
+                                <input placeholder="Kids" className="w-full p-1  text-sm" />
                             </div>
                             <div className="w-1/6 h-full flex items-center pl-6 rounded-r-3xl hover:bg-[#ECBF40]">
-                                <button className="text-[#C6C6C6] hover:text-white font-roboto text-sm">
+                                <button className="text-[#C6C6C6] hover:text-white  text-sm">
                                     Search
                                 </button>
                             </div>
@@ -232,7 +232,7 @@ export default function Tours() {
                     <div className="flex flex-col gap-8">
                         <div className="">
                             <div className="h-14">
-                                <span className="text-2xl font-roboto font-medium">Popular Destinations</span>
+                                <span className="text-2xl  font-medium">Popular Destinations</span>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-row justify-between">
@@ -250,7 +250,7 @@ export default function Tours() {
 
                         <div className="">
                             <div className="h-14">
-                                <span className="text-2xl font-roboto font-medium">Popular Tour Packages</span>
+                                <span className="text-2xl  font-medium">Popular Tour Packages</span>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-row justify-between">

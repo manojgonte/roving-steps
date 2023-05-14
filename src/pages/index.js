@@ -9,13 +9,13 @@ import HomePageTestimonial from "@/Component/HomePageTestimonial";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex w-full min-h-screen flex-col">
         <Header />
         <HomePageBanner />
         <HomePageAboutUs />
         <PopularDestinations />
         <HomeTourPackage />
-        {/* <HomePageChooseUs /> */}
+        <HomePageChooseUs />
         <HomePageTestimonial />
         <Footer />
     </main>

@@ -90,7 +90,7 @@ const PopularDestinations = () => {
                 </button>
             </div>
             <div className=" flex justify-center items-center">
-                <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-36 h-8 rounded-md font-roboto text-sm drop-shadow-lg text-center">
+                <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-36 h-8 rounded-md  text-sm drop-shadow-lg text-center">
                     EXPLORE MORE
                 </button>
             </div>

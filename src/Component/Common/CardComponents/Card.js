@@ -15,25 +15,31 @@ const Card = (props) => {
     } = props.cardDetails;
 
     return (
-        <div className="flex flex-col w-60 h-full gap-4">
-            <div className={`w-full ${path === "tours" ? 'h-52' : 'h-72'} p-2 bg-white relative rounded-md overflow-hidden`}>
-                <Image src={img}
-                    width={300}
-                    height={160}
-                    className="w-full h-full object-fill"
-                    alt=""
+        <div className="flex flex-col w-60 h-full gap-4 border items-center">
+            <div className={`w-full h-52 border border-black p-2 bg-white relative rounded-md overflow-hidden`}>
+                <Image
+                    src={img}
+                    fill
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        overflow: "hidden"
+                    }}
+                    alt="bg-image"
                 />
             </div>
-            <div className="px-1">
+            <div className="px-1 items-center">
                 <div className="flex flex-row items-center">
-                    <div className="font-roboto font-bold text-lg pr-3">
+                    <div className=" font-bold text-lg pr-3">
                         {name}
                     </div>
-                    {!seeMore && <div className="font-roboto font-normal text-sm">
+                    {!seeMore && <div className=" font-normal text-sm">
                         5N/6D
                     </div>}
                 </div>
-                {seeMore && <div className="flex flex-col h-8 text-xs overflow-ellipsis overflow-hidden line-clamp-3 font-roboto">
+                {seeMore && <div className="flex flex-col h-8 text-xs overflow-ellipsis overflow-hidden line-clamp-3 ">
                     {`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nulla voluptate nam placeat minus ducimus. Tenetur quasi, harum illum sapiente dolorem voluptas, praesentium commodi quisquam aliquam quas, voluptatum animi ullam!`}
                 </div>}
                 {!seeMore &&
@@ -41,18 +47,18 @@ const Card = (props) => {
                         <div>
                             {stars} Stars
                         </div>
-                        <div className=" font-roboto font-extrabold text-xs">
+                        <div className="  font-extrabold text-xs">
                             4 Stay | Meal | Siteseeing | Private Transport | Visa
                         </div>
                         <div>
-                            <div className=" font-roboto font-bold text-xs">Starting from</div>
+                            <div className="  font-bold text-xs">Starting from</div>
                             {cost}
                         </div>
                         <div>{note}</div>
                     </div>
                 }
-                {seeMore && <div className="font-roboto text-[#27A5BF] text-xs"><Link href="/TourDetail">See more...</Link></div>}
-                {button.enable && <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-24 h-7 rounded-md font-roboto text-xs drop-shadow-lg text-center my-2">
+                {seeMore && <div className=" text-[#27A5BF] text-xs"><Link href="/TourDetail">See more...</Link></div>}
+                {button.enable && <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-24 h-7 rounded-md  text-xs drop-shadow-lg text-center my-2">
                     BOOK NOW
                 </button>}
             </div>

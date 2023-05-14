@@ -56,7 +56,7 @@ const HomePageAboutUs = () => {
                 </div>
             </div>
             <div className="w-2/4 flex flex-col justify-center items-center gap-8">
-                <div className="text-[#1B2C60] font-extrabold text-3xl font-roboto">About Us</div>
+                <div className="text-[#1B2C60] font-extrabold text-3xl ">About Us</div>
                 <div className="text-[#1B2C60] font-normal text-sm text-center w-4/5">
                     <p className="mb-10">
                         {`Roving steps is formed with a strong passion of exploring different destinations. This is not just a company but a family which we are looking forward to create. We are here to Use our expert knowledge and a personalized touch to make sure reality exceeds your expectations. We get immense pleasure to see our guest satisfied and smiling because of our services.`}
@@ -66,7 +66,7 @@ const HomePageAboutUs = () => {
                     </p>
                 </div>
                 <div>
-                    <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-28 h-8 rounded-md font-roboto text-sm drop-shadow-lg text-center">
+                    <button className="bg-[#ECBF40] hover:bg-[#ECA740] text-white w-28 h-8 rounded-md  text-sm drop-shadow-lg text-center">
                         EXPLORE
                     </button>
                 </div>

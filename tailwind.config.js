@@ -15,7 +15,7 @@ module.exports = {
         'banner-image': "url('/public/Assets/images/common/Banner_a.jpeg')"
       },
       fontFamily: {
-        roboto: "Roboto, sans-serif",
+        jost: ['Jost', 'sans-serif'],
       }
     },
   },
