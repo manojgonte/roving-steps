@@ -1,21 +1,34 @@
 import Footer from "../Footer";
 import Header from "../Header";
+import Image from "next/image";
 
 export default function Contact() {
     return (
         <main className="flex min-h-screen flex-col">
             <Header />
-
             {/* hero section */}
-            <div className="text-center bg-gray-50 text-gray-800 py-24 px-6 md:mt-8" style={{
-                backgroundImage: "url('/Assets/images/common/Banner_b.jpg')",
-                backgroundSize: 'cover'
+            <div className="text-center bg-gray-50 text-gray-800 mt-5 py-24 px-6 md:mt-14 shadow-lg" style={{
+                backgroundImage: "url('/Assets/images/background/contact_bg.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
             }}>
                 <h2 className="text-5xl md:text-5xl xl:text-5xl font-bold tracking-tight mb-12 text-white">Contact Us</h2>
             </div>
 
             {/* contact form and contact details */}
-            <div className="container px-6 mx-auto bg-white py-10">
+            <div className="px-6 bg-white py-10 relative z-10" style={{
+                backgroundImage: "url('/Assets/images/elements/triangle_trans.png')",
+                backgroundPosition:'top'
+            }}>
+                {/* <div className="absolute bottom-0 left-0 z-0">
+                    <Image
+                        src={"/Assets/images/elements/triangle_trans.png"}
+                        width={500}
+                        height={600}
+                        className=""
+                        alt="logo"
+                    />
+                </div> */}
 
                 <section className="mb-15 text-white">
 
@@ -32,28 +45,34 @@ export default function Contact() {
                                     <div className="flex justify-between">
                                         <div className="mb-3 mr-3 w-full">
                                             <label for="name" className="block text-sm font-semibold text-gray-800" >Name *</label>
-                                            <input type="text" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                            <input type="text" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md" />
                                         </div>
                                         <div className="mb-3 w-full">
                                             <label for="email" className="block text-sm font-semibold text-gray-800" >Email *</label>
-                                            <input type="email" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                            <input type="email" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md" />
                                         </div>
                                     </div>
 
                                     <div className="flex justify-between">
                                         <div className="mb-3 mr-3 w-full">
                                             <label for="contact" className="block text-sm font-semibold text-gray-800" >Contact *</label>
-                                            <input type="number" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                            <input type="number" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md" />
                                         </div>
                                         <div className="mb-3 w-full">
                                             <label for="address" className="block text-sm font-semibold text-gray-800" >Address *</label>
-                                            <input type="text" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                            <input type="text" className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md" />
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <div className="mb-3 mr-3 w-full">
+                                            <label for="address" className="block text-sm font-semibold text-gray-800" >Message *</label>
+                                            <textarea name="message" rows={3} className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="mb-12 pb-1 pt-1 text-center">
-                                    <button className="bg-[#ECBF40] h-10 p-3 flex items-center justify-center rounded-md font-roboto font-normal opacity-100 text-sm hover:shadow-lg">
+                                <div className="mb-12 py-5 text-center">
+                                    <button className="bg-[#ECBF40] hover:bg-[#eca740] h-10 p-3 flex items-center justify-center rounded-md font-normal opacity-100 text-sm hover:shadow-lg">
                                         SEND MESSAGE
                                     </button>
                                 </div>
@@ -120,6 +139,24 @@ export default function Contact() {
                                         <div className="grow ml-6">
                                             <p className="font-bold mb-1 text-gray-500">Email Address</p>
                                             <p className="text-gray-500">info@rovingsteps.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
+                                    <div className="flex align-start">
+                                        <div className="shrink-0">
+                                            <div className="p-4 bg-[#1B2C60] rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker"
+                                                    className="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path fill="currentColor"
+                                                        d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div className="grow ml-6">
+                                            <p className="font-bold mb-1 text-gray-500">Follow Us On</p>
+                                            <p className="text-gray-500"></p>
                                         </div>
                                     </div>
                                 </div>
