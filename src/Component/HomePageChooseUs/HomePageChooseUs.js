@@ -22,8 +22,8 @@ const HomePageChooseUs = () => {
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-[#ECA740] font-roboto font-bold text-md">Easy Booking</span>
-                            <span className="text-[#000000] font-roboto font-bold text-xs">We offer easy and convenient flight bookings with attractive offers</span>
+                            <span className="text-[#ECA740]  font-bold text-md">Easy Booking</span>
+                            <span className="text-[#000000]  font-bold text-xs">We offer easy and convenient flight bookings with attractive offers</span>
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
@@ -33,8 +33,8 @@ const HomePageChooseUs = () => {
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-[#ECA740] font-roboto font-bold text-md">Exciting Deals</span>
-                            <span className="text-[#000000] font-roboto font-bold text-xs">Enjoy exciting deals on flights, hotels, buses, car rental and tour packages</span>
+                            <span className="text-[#ECA740]  font-bold text-md">Exciting Deals</span>
+                            <span className="text-[#000000]  font-bold text-xs">Enjoy exciting deals on flights, hotels, buses, car rental and tour packages</span>
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
@@ -44,8 +44,8 @@ const HomePageChooseUs = () => {
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-[#ECA740] font-roboto font-bold text-md">Pocket Friendly Pricing</span>
-                            <span className="text-[#000000] font-roboto font-bold text-xs">We ensure low rates on hotel reservation, holiday packages and on flight tickets.</span>
+                            <span className="text-[#ECA740]  font-bold text-md">Pocket Friendly Pricing</span>
+                            <span className="text-[#000000]  font-bold text-xs">We ensure low rates on hotel reservation, holiday packages and on flight tickets.</span>
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
@@ -55,13 +55,13 @@ const HomePageChooseUs = () => {
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-[#ECA740] font-roboto font-bold text-md">24/7 Support</span>
-                            <span className="text-[#000000] font-roboto font-bold text-xs">Get assistance 24/7 on any kind of travel related query, We are happy to assist you</span>
+                            <span className="text-[#ECA740]  font-bold text-md">24/7 Support</span>
+                            <span className="text-[#000000]  font-bold text-xs">Get assistance 24/7 on any kind of travel related query, We are happy to assist you</span>
                         </div>
                     </div>
                 </div>
                 <div className="py-8">
-                    <p className="text-[#6B6B6B] text-left font-normal font-roboto text-xs">
+                    <p className="text-[#6B6B6B] text-left font-normal  text-xs">
                         {`Lorem ipsum dolor sit amet. Ea magnam dolorum est totam quia aut perferendis cumque. Ea dolor similique sit illo temporibus ea pariatur recusandae et recusandae nemo sit optio libero. In placeat numquam sit eaque illo in illum culpa At praesentium amet qui expedita veniam nam error quis ut quod dolorum. Qui ipsum laboriosam ex galisum perspiciatis vel dignissimos rerum et voluptatem dolorum. Lorem ipsum dolor sit amet. Ea magnam dolorum est totam quia aut perferendis cumque. Ea dolor similique sit illo temporibus ea pariatur recusandae et recusandae nemo sit optio libero. In placeat numquam sit eaque illo in illum culpa At praesentium amet qui expedita veniam nam error quis ut quod dolorum.`}
                     </p>
                 </div>
