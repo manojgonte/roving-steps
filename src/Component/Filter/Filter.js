@@ -1,6 +1,5 @@
 import { CheckOutlined, DownOutlined, UpOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import Checkbox from "../Common/Checkbox/Checkbox";
 import CheckboxComponent from "../Common/Checkbox/Checkbox";
 
 export default function Filters({ title, TourList }) {
