@@ -3,6 +3,7 @@ import Footer from "../Footer";
 import Header from "../Header";
 import Filters from "@/Component/Filter/Filter";
 import Card from "@/Component/Common/CardComponents/Card";
+import SearchFilter from "@/Component/Common/SearchFilter/SearchFilter";
 
 export default function Tours() {
 
@@ -140,7 +141,7 @@ export default function Tours() {
                             Tours
                         </span>
                     </div>
-                    <div className="w-11/12 h-9 border">
+                    {/* <div className="w-11/12 h-9 border">
                         <div className="bg-white w-full h-full rounded-3xl flex items-center">
                             <div className="w-1/5 border-[#ECBF40] h-2/3 flex items-center rounded-l-3xl border-r-2 my-2 ml-2 pl-4 gap-1">
                                 <Image
@@ -193,7 +194,8 @@ export default function Tours() {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <SearchFilter />
                 </div>
             </div>
             <div className="w-full px-28 pt-4 h-full flex flex-row">

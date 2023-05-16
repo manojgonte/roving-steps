@@ -12,11 +12,9 @@ import { useRef } from "react";
 
 const HomePageTestimonial = () => {
     const swiperRef = useRef();
-
-
     return (
         <div className="w-full h-[600px] flex flex-col justify-center items-center bg-white px-32 py-12 ">
-            <div className="w-full h-20 flex justify-center items-center">
+            <div className="w-full h-full flex justify-center items-center">
                 <Image src={"/Assets/images/Icons/Sayings.png"}
                     width={100} height={100}
                     className="w-24 h-20 object-center"
@@ -28,14 +26,13 @@ const HomePageTestimonial = () => {
             <div className="w-full h-10 flex justify-center items-center">
                 <span className="text-2xl font-normal ">Many of our travelers have shared their review about tour, hotels, food and many more</span>
             </div>
-            <div className="w-full h-[580px] bg-white rounded-lg flex justify-center gap-4 shadow-2xl drop-shadow-2xl mt-14">
-
+            <div className="w-full bg-white rounded-lg flex justify-center gap-4 shadow-2xl drop-shadow-2xl my-14 p-5 py-10">
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={10}
-                    pagination={true}
-                    modules={[Pagination]}
-                    className="mySwiper"
+                    pagination={false}
+                    // modules={[Pagination]}
+                    className=""
                 >
                     {[1, 2, 3, 4, 5, 6].map(
                         (card, index) => {

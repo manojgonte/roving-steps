@@ -20,16 +20,6 @@ export default function Contact() {
                 backgroundImage: "url('/Assets/images/elements/triangle_trans.png')",
                 backgroundPosition:'top'
             }}>
-                {/* <div className="absolute bottom-0 left-0 z-0">
-                    <Image
-                        src={"/Assets/images/elements/triangle_trans.png"}
-                        width={500}
-                        height={600}
-                        className=""
-                        alt="logo"
-                    />
-                </div> */}
-
                 <section className="mb-15 text-white">
 
                     <div className="flex flex-wrap">

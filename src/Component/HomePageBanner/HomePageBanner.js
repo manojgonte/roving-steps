@@ -14,7 +14,7 @@ import SearchFilter from "../Common/SearchFilter/SearchFilter";
 const HomePageBanner = () => {
 
     return (
-        <div className="flex flex-col relative w-full h-[700px] border border-black justify-center items-center">
+        <div className="flex flex-col m-0 p-0 relative w-full h-[600px] justify-center items-center">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

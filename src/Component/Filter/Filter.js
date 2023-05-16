@@ -1,6 +1,5 @@
 import { CheckOutlined, DownOutlined, UpOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import Checkbox from "../Common/Checkbox/Checkbox";
 import CheckboxComponent from "../Common/Checkbox/Checkbox";
 
 export default function Filters({ title, TourList }) {
@@ -18,7 +17,7 @@ export default function Filters({ title, TourList }) {
                         <DownOutlined />}
                 </div>
             </div>
-            <div className={`${title === "Domestic Tours" ? 'h-48' : 'h-auto'} overflow-y-scroll`}>
+            <div className={`h-auto overflow-y-scroll`}>
                 {
                     showFilterList && TourList.map((name, index) => {
                         return (
