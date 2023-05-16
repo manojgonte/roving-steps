@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HomePageAboutUs = () => {
     return (
-        <div className="flex flex-row relative w-full h-[500px] bg-gradient-to-r from-cyan-200 to-white gap-4 bg-scroll banner-image px-16">
+        <div className="flex flex-row relative w-full h-[500px] bg-gradient-to-r px-16">
             <div className="w-2/4 flex justify-center">
                 <div className="bg-white w-[216px] h-[187px] new-clip-polygon flex justify-center items-center absolute top-14">
                     <div className="w-[196px] h-[167px] new-clip-polygon">

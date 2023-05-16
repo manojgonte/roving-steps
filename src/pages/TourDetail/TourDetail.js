@@ -46,7 +46,7 @@ export default function TourDetail() {
             <Header />
             <div className="flex flex-col relative w-full h-[350px] justify-center items-center gap-8 bg-scroll banner-image px-16">
                 <Image
-                    src={"/Assets/images/common/Banner_a.jpeg"}
+                    src={"/Assets/images/Banner/BannerOne.jpeg"}
                     fill
                     style={{
                         width: "100%",

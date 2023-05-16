@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <div className="flex flex-row w-full h-96">
+        <div className="flex flex-row w-full h-96 justify-center"  style={{
+            backgroundImage: "url('/Assets/images/common/bali-island.jpg')",
+            objectPosition: "center",
+        }}>
             <div className="w-2/6 h-full flex justify-center items-center bg-white">
                 <Image src={"/Assets/images/Icons/Roving_Step_Logo_Footer.svg"}
                     width={200}
@@ -11,7 +14,7 @@ const Footer = () => {
                     alt=""
                 />
             </div>
-            <div className="flex flex-row w-full h-full bg-[#1B2C60] bg-opacity-80">
+            <div className="flex flex-row w-full h-full">
                 <div className="w-2/5 h-full pl-28 py-10 flex flex-col gap-4">
                     <div className="flex flex-col">
                         <span className="text-[#ECA740] text-lg  mb-3">Information</span>

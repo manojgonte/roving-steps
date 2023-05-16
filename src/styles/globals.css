@@ -28,6 +28,15 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+@layer utilities {
+  .bg-cover {
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+}
 
 /* /////////////////////////////// */
 .new-clip-polygon {

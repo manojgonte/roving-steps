@@ -2,12 +2,21 @@ import Image from "next/image";
 
 const HomePageChooseUs = () => {
     return (
-        <div className="flex flex-row relative w-full h-[500px] bg-gradient-to-r from-white to-cyan-200 gap-8 bg-scroll banner-image px-32 py-12">
+        <div className="flex flex-row relative w-full h-[500px] gap-8 px-32 py-12">
             <div className="w-1/4 h-96 flex justify-end p-2 rounded-md bg-white drop-shadow-md">
-                <div className="w-full h-full overflow-hidden">
-                    <Image src={"/Assets/images/common/Hexagone_3.jpg"}
-                        width={100} height={100}
-                        className="w-full h-full object-fill" alt="choose us image" />
+                <div className="w-full h-full relative overflow-hidden">
+                    <Image
+                        src={"/Assets/images/common/eiffel-tower.jpg"}
+                        fill
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                            overflow: "hidden"
+                        }}
+                        className="rounded-md"
+                        alt="choose us image" />
                 </div>
             </div>
             <div className="w-4/6 h-96">
@@ -16,8 +25,8 @@ const HomePageChooseUs = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-8 border-b border-[#E2E2E2] py-6">
                     <div className="flex flex-row gap-5">
-                        <div className="w-24 h-14 rounded-md overflow-hidden">
-                            <Image src={"/Assets/images/common/Hexagone_3.jpg"}
+                        <div className="w-16 h-16 rounded-md overflow-hidden">
+                            <Image src={"/Assets/images/Icons/Next Hover.png"}
                                 width={100} height={100}
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
@@ -27,8 +36,8 @@ const HomePageChooseUs = () => {
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
-                        <div className="w-24 h-14 rounded-md overflow-hidden">
-                            <Image src={"/Assets/images/common/Hexagone_3.jpg"}
+                        <div className="w-16 h-16 rounded-md overflow-hidden">
+                            <Image src={"/Assets/images/Icons/Next Hover.png"}
                                 width={100} height={100}
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
@@ -38,8 +47,8 @@ const HomePageChooseUs = () => {
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
-                        <div className="w-28 h-14 rounded-md overflow-hidden">
-                            <Image src={"/Assets/images/common/Hexagone_3.jpg"}
+                        <div className="w-16 h-16 rounded-md overflow-hidden">
+                            <Image src={"/Assets/images/Icons/Next Hover.png"}
                                 width={100} height={100}
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
@@ -49,8 +58,8 @@ const HomePageChooseUs = () => {
                         </div>
                     </div>
                     <div className="flex flex-row gap-5">
-                        <div className="w-28 h-14 rounded-md overflow-hidden">
-                            <Image src={"/Assets/images/common/Hexagone_3.jpg"}
+                        <div className="w-16 h-16 rounded-md overflow-hidden">
+                            <Image src={"/Assets/images/Icons/Next Hover.png"}
                                 width={100} height={100}
                                 className="w-full h-full object-fill" alt="choose us image" />
                         </div>
@@ -61,7 +70,7 @@ const HomePageChooseUs = () => {
                     </div>
                 </div>
                 <div className="py-8">
-                    <p className="text-[#6B6B6B] text-left font-normal  text-xs">
+                    <p className="text-[#6B6B6B] text-left font-normal text-xs">
                         {`Lorem ipsum dolor sit amet. Ea magnam dolorum est totam quia aut perferendis cumque. Ea dolor similique sit illo temporibus ea pariatur recusandae et recusandae nemo sit optio libero. In placeat numquam sit eaque illo in illum culpa At praesentium amet qui expedita veniam nam error quis ut quod dolorum. Qui ipsum laboriosam ex galisum perspiciatis vel dignissimos rerum et voluptatem dolorum. Lorem ipsum dolor sit amet. Ea magnam dolorum est totam quia aut perferendis cumque. Ea dolor similique sit illo temporibus ea pariatur recusandae et recusandae nemo sit optio libero. In placeat numquam sit eaque illo in illum culpa At praesentium amet qui expedita veniam nam error quis ut quod dolorum.`}
                     </p>
                 </div>

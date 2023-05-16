@@ -54,7 +54,7 @@ const PopularDestinations = () => {
         }
     ]
     return (
-        <div className="flex flex-col w-full h-[600px] px-16 py-5 gap-8 bg-gradient-to-l from-cyan-200 to-white">
+        <div className="flex flex-col w-full h-[600px] px-16 py-5 gap-8">
             <div className="text-2xl font-bold text-[#1B2C60] text-center w-full py-5">
                 Popular Destinations
             </div>
