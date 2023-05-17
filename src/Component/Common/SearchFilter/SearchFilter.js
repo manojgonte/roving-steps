@@ -8,7 +8,7 @@ export default function SearchFilter() {
                 <div className="bg-white w-full h-full rounded-3xl flex items-center">
                     <div className="w-1/4 border-[#ECBF40] border-r-2 flex items-center rounded-l-3xl ml-2 pl-1 gap-1">
                         <Image
-                            src={"/Assets/images/icons/LocationDefault.svg"}
+                            src={"/Assets/images/Icons/LocationDefault.svg"}
                             width={10}
                             height={10}
                             alt="locationIcon"
@@ -17,7 +17,7 @@ export default function SearchFilter() {
                     </div>
                     <div className="w-1/4 border-[#ECBF40] flex items-center rounded-l-3xl border-r-2 pl-1 gap-1">
                         <Image
-                            src={"/Assets/images/icons/AdultDefault.svg"}
+                            src={"/Assets/images/Icons/AdultDefault.svg"}
                             width={15}
                             height={15}
                             alt="adultIcon"
@@ -26,7 +26,7 @@ export default function SearchFilter() {
                     </div>
                     <div className="w-1/4 border-[#ECBF40] flex items-center rounded-l-3xl border-r-2 pl-1 gap-1">
                         <Image
-                            src={"/Assets/images/icons/KidsDefault.svg"}
+                            src={"/Assets/images/Icons/KidsDefault.svg"}
                             width={15}
                             height={15}
                             alt="kidsIcon"
@@ -35,7 +35,7 @@ export default function SearchFilter() {
                     </div>
                     <div className="w-1/4 h-full flex items-center pl-6 rounded-r-3xl hover:bg-[#ECBF40] hover:text-white">
                         <Image
-                            src={"/Assets/images/icons/Search.svg"}
+                            src={"/Assets/images/Icons/Search.svg"}
                             width={15}
                             height={15}
                             alt="searchIcon"
